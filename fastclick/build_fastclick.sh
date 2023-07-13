@@ -8,4 +8,4 @@ cd $repo_dirname
 git checkout $repo_hash
 mkdir $dest_dir
 ./configure --prefix=$PWD/$dest_dir --disable-linuxmodule --enable-userlevel --enable-user-multithread --enable-intel-cpu --enable-etherswitch --disable-dynamic-linking --enable-local --enable-dpdk=$XCHG_SDK --enable-research --disable-task-stats --enable-flow --enable-cpu-load --prefix $(pwd)/build/ --enable-dpdk-pool --enable-rand-align RTE_TARGET=x86_64-native-linux-clanglto CXX="clang++ -flto -fno-access-control" CC="clang -flto -march=native" CXXFLAGS="-std=gnu++14 -O3 -march=native" LDFLAGS="-flto -fuse-ld=lld -Wl,-plugin-opt=save-temps" RANLIB="/bin/true" LD="ld.lld" READELF="llvm-readelf" AR="llvm-ar" --disable-bound-port-transfer --enable-dpdk-pool --enable-dpdk-xchg --enable-dpdk-packet --disable-dpdk-softqueue
-make -J install
+make -j 4 install
