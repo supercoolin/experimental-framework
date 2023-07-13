@@ -7,6 +7,6 @@ git clone $repo $repo_dirname
 cd $repo_dirname
 git checkout $repo_hash
 mkdir $dest_dir
-meson setup -Dbuildtype=debugoptimized -Dc_args=-march=native -Dcpp_args=-march=native -Dplatform=native -Ddisable_drivers=regex/cn9k --prefix $PWD/$dest_dir build .
+meson setup -Dbuildtype=debugoptimized -Dc_args=-march=icelake-server -Dcpp_args=-march=icelake-server -Ddisable_drivers=regex/cn9k --prefix $PWD/$dest_dir build .
 cd build
 ninja install
