@@ -7,5 +7,10 @@ git clone $repo $repo_dirname
 cd $repo_dirname
 git checkout $repo_hash
 mkdir $dest_dir
-./configure --prefix=$PWD/$dest_dir --disable-linuxmodule --enable-userlevel --enable-user-multithread --enable-intel-cpu --enable-etherswitch --disable-dynamic-linking --enable-local --enable-dpdk=$XCHG_SDK --enable-research --disable-task-stats --enable-flow --enable-cpu-load --prefix $(pwd)/build/ --enable-dpdk-pool --enable-rand-align RTE_TARGET=x86_64-native-linux-clanglto CXX="clang++ -flto -fno-access-control" CC="clang -flto -march=native" CXXFLAGS="-std=gnu++14 -O3 -march=native" LDFLAGS="-flto -fuse-ld=lld -Wl,-plugin-opt=save-temps" RANLIB="/bin/true" LD="ld.lld" READELF="llvm-readelf" AR="llvm-ar" --disable-bound-port-transfer --enable-dpdk-pool --enable-dpdk-xchg --enable-dpdk-packet --disable-dpdk-softqueue
-make -j 4 install
+export LD_LIBRARY_PATH=/etinfo/users2/evrardco/tools/ofed-mstflint/mstflint-4.24.0/dist/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/etinfo/users2/evrardco/tools/ofed-mstflint/mstflint-4.24.0/dist/lib/mstflint:$LD_LIBRARY_PATH
+export CPATH=/etinfo/users2/evrardco/tools/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$CPATH
+export C_INCLUDE_PATH=/etinfo/users2/evrardco/tools/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/etinfo/users2/evrardco/tools/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$CPLUS_INCLUDE_PATH
+./configure --prefix=$PWD/$dest_dir --enable-dpdk --enable-intel-cpu --verbose --enable-select=poll CFLAGS="-O3 -march=icelake-server" CXXFLAGS="-std=c++11 -O3 -march=icelake-server"  --disable-dynamic-linking --enable-poll --enable-bound-port-transfer --enable-local --enable-flow --disable-task-stats --disable-cpu-load
+make -j 8 install

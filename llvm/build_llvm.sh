@@ -11,4 +11,4 @@ prefix=$PWD/$dest_dir
 mkdir build
 cmake -S llvm -B build -GNinja -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_USE_LINKER=gold  -DLLVM_ENABLE_PROJECTS="clang;lldb;llvm" -DCMAKE_INSTALL_PREFIX:PATH=$prefix -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_C_FLAGS=-march=native -DCMAKE_CPP_FLAGS=-march=native ..
 cd build
-ninja -j 4 install
+ninja -j 12 install
