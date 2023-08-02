@@ -1,7 +1,7 @@
 dest_dir=dist
 repo=git@github.com:DPDK/dpdk.git
-repo_version=22.07
-repo_hash=4fceceed5b5e9fbf04acffd66239c79d81e79260
+repo_version=23.07
+repo_hash=12fcafcd62286933e6b167b14856d21f642efa5f
 repo_dirname=dpdk-$repo_version
 git clone $repo $repo_dirname
 cd $repo_dirname
