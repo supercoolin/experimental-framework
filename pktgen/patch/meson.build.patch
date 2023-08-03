@@ -1,0 +1,11 @@
+--- meson.build	2023-08-03 14:57:50.453373087 +0200
++++ meson.build.new	2023-08-03 15:04:27.878219443 +0200
+@@ -70,7 +70,7 @@
+ 	dpdk = dependency('libdpdk', required: true)
+ 	# message('prefix: ' + get_option('prefix') + ' libdir: ' + get_option('libdir'))
+ 
+-	dpdk_libs_path = join_paths(get_option('prefix'), get_option('libdir'))
++	dpdk_libs_path = join_paths(get_option('dpdk_prefix'), get_option('libdir'))
+ 	# message('DPDK lib path: ' + dpdk_libs_path)
+ 
+ 	dpdk_bond = cc.find_library('librte_net_bond', dirs: [dpdk_libs_path], required: false)
