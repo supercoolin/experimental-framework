@@ -14,7 +14,7 @@ export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/inc
 export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$CPLUS_INCLUDE_PATH
 git checkout $repo_hash
 mkdir $dest_dir
-meson setup -Dbuildtype=debugoptimized -Dc_args=-march=icelake-server -Dcpp_args=-march=icelake-server -Ddisable_drivers=regex/cn9k --prefix $PWD/$dest_dir $dest_dir .
+meson setup -Dbuildtype=debugoptimized -Dc_args=-march=native -Dcpp_args=-march=native -Ddisable_drivers=regex/cn9k --prefix $PWD/$dest_dir $dest_dir .
 cd $dest_dir
 ninja -j 8 install
 
