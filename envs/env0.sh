@@ -23,8 +23,8 @@ export CPATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/include:$CPATH
 export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/include:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/include:$CPLUS_INCLUDE_PATH
 #PKTGEN VARS
-export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.06.1/dist/lib:$LD_LIBRARY_PATH
-export PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.06.1/dist/bin:$PATH
-export CPATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.06.1/dist/include:$CPATH
-export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.06.1/dist/include:$C_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.06.1/dist/include:$CPLUS_INCLUDE_PATH
+export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/lib:$LD_LIBRARY_PATH
+export PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/bin:$PATH
+export CPATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/include:$CPATH
+export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/include:$CPLUS_INCLUDE_PATH
