@@ -1,5 +1,5 @@
 dest_dir=dist
-repo=git@github.com:Mellanox/mstflint.git
+repo=https://github.com/Mellanox/mstflint.git
 repo_version=4.24.0
 repo_hash=885b2418543128ba2ae6a8095f39002d7c56c0ef
 repo_dirname=mstflint-$repo_version
