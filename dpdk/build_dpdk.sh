@@ -1,5 +1,5 @@
 dest_dir=dist
-repo=git@github.com:DPDK/dpdk.git
+repo=https://github.com/DPDK/dpdk.git
 repo_version=23.07
 repo_hash=12fcafcd62286933e6b167b14856d21f642efa5f
 repo_dirname=dpdk-$repo_version

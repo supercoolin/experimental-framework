@@ -1,5 +1,5 @@
 dest_dir=dist
-repo=git@github.com:pktgen/Pktgen-DPDK.git
+repo=https://github.com/pktgen/Pktgen-DPDK.git
 repo_version=23.03
 repo_hash=2d5f9cadf87cc71e3a01063e3412fbdeb53d7ea8
 repo_dirname=pktgen-$repo_version

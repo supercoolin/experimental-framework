@@ -1,5 +1,5 @@
 dest_dir=dist
-repo=git@github.com:tbarbette/fastclick.git
+repo=https://github.com/tbarbette/fastclick.git
 repo_version=26a2
 repo_hash=26a2b65
 repo_dirname=fastclick-$repo_version
