@@ -1,17 +1,20 @@
 {
-    "installed-deps": true,
-    "install-dir": "dist",
+    "installed-deps": false,
+    "tampered-bashrc": false,
+    "frameworks-root": null,
+    "install-dir-name": "",
+    "ubuntu-deps": "build-essential autotools-dev automake zlib1g-dev libssl-dev pkg-config meson cmake python3-pyelftools libnuma-dev liblua5.3-dev libpcap-dev",
     "repos": [
         {
             "name": "dpdk",
             "versions": [
                 {
-                    "number":"23.07",
+                    "number": "23.07",
                     "script": "scripts/23.07.sh",
-                    "built": false 
+                    "built": false
                 }
             ]
-
         }
-    ]
+    ],
+    "install-dir": null
 }
