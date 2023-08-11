@@ -1,0 +1,8 @@
+CMD_SHOW_VERSIONS="show-versions"
+CMD_BUILD_ALL="build"
+CMD_NUKE="nuke"
+CMD_REMOVE_ALL="remove-all"
+CMD_REMOVE="remove"
+CMD_BUILD="build"
+CMD_INSTALL_DEPS="install-deps"
+CFG_KEY_INSTALLED_DEPS="installed-deps"
