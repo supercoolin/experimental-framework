@@ -1,3 +1,17 @@
 {
-    "installed-deps": true
+    "installed-deps": true,
+    "install-dir": "dist",
+    "repos": [
+        {
+            "name": "dpdk",
+            "versions": [
+                {
+                    "number":"23.07",
+                    "script": "scripts/23.07.sh",
+                    "built": false 
+                }
+            ]
+
+        }
+    ]
 }
