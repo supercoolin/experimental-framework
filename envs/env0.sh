@@ -1,7 +1,7 @@
 #LLVM VARS
 export PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-16.06/build/bin:$PATH
 #DPDK VARS
-export RTE_SDK=$EXP_FRAMEWORK_PATH/dpdk/dpdk-22.07
+export RTE_SDK=$EXP_FRAMEWORK_PATH/dpdk/dpdk-23.07
 export RTE_TARGET=x86_64-native-linuxapp-gcc
 export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/dpdk/dpdk-23.07/dist/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/dpdk/dpdk-23.07/dist/lib/:$LD_LIBRARY_PATH

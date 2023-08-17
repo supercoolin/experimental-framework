@@ -19,4 +19,4 @@ cd $dest_dir
 ninja -j 8 install
 
 
-echo "Please add export RTE_SDK=$RTE_SDK;RTE_TARGET=$RTE_TARGET to your bashrc"
+echo "Please add export RTE_SDK=$RTE_SDK;export RTE_TARGET=$RTE_TARGET to your bashrc"
