@@ -1,13 +1,13 @@
-#!/bin/bash
-export EXP_FRAMEWORK_PATH=$(dirname "$BASH_SOURCE")
+#!/bin/basource
+export EXP_FRAMEWORK_PATH=$(dirname "$BAsource_SOURCE")
 cd llvm
-sh build_llvm.sh
+source build_llvm.source
 cd ../ofed-mstflint
-sh build_mstflint.sh
+source build_mstflint.source
 cd ../dpdk
-sh build_dpdk.sh
-source ../env/env0.sh
+source build_dpdk.source
+source ../envs/env0.source
 cd ../fastclick
-sh build_fastclick.sh
+source build_fastclick.source
 cd ../pktgen
-sh build_pktgen.sh
+source build_pktgen.source
