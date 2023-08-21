@@ -1,5 +1,5 @@
 export EXP_FRAMEWORK_PATH=$(dirname "$BASH_SOURCE")
-cd ../ofed-mstflint
+cd ofed-mstflint
 sh build_mstflint.sh
 cd ../dpdk
 sh build_dpdk.sh
