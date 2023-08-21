@@ -1,3 +1,4 @@
+#!/bin/bash
 export EXP_FRAMEWORK_PATH=$(dirname "$BASH_SOURCE")
 cd ofed-mstflint
 sh build_mstflint.sh
