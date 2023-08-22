@@ -1,5 +1,6 @@
-#!/bin/basource
-export EXP_FRAMEWORK_PATH=$(dirname "$BAsource_SOURCE")
+#!/bin/bash
+export EXP_FRAMEWORK_PATH=$(pwd)
+export START_DIR=$(pwd)
 cd llvm
 source build_llvm.source
 cd ../ofed-mstflint
