@@ -1,5 +1,5 @@
 #!/bin/bash
-export EXP_FRAMEWORK_PATH=$(dirname "$BASH_SOURCE")
+export EXP_FRAMEWORK_PATH=$(pwd)
 export START_DIR=$(pwd)
 cd dpdk
 source build_dpdk.sh
