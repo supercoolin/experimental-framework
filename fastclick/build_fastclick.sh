@@ -12,6 +12,6 @@ export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/li
 export CPATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$CPATH
 export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$CPLUS_INCLUDE_PATH
-CXX=clang ./configure --prefix=$PWD/$dest_dir --enable-dpdk --enable-intel-cpu --verbose --enable-select=poll CFLAGS="-O3 -march=native" CXXFLAGS="-std=c++11 -O3 -march=native"  --disable-dynamic-linking --enable-poll --enable-bound-port-transfer --enable-local --enable-flow --disable-task-stats --disable-cpu-load
+CXX=clang++ ./configure --prefix=$PWD/$dest_dir --enable-dpdk --enable-intel-cpu --verbose --enable-select=poll CFLAGS="-O3 -march=native" CXXFLAGS="-std=c++11 -O3 -march=native"  --disable-dynamic-linking --enable-poll --enable-bound-port-transfer --enable-local --enable-flow --disable-task-stats --disable-cpu-load
 make -j 8 install
-echo $'To use packetmill optimally, add \nexport alias packetmill="export CXX=clang packetmill"\nto your bashrc'
+echo $'To use packetmill optimally, add \nexport alias packetmill="export CXX=clang++ packetmill"\nto your bashrc'
