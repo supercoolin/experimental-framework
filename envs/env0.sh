@@ -1,5 +1,10 @@
 #LLVM VARS
-export PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-16.06/build/bin:$PATH
+export PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-10.0.1/dist/bin:$PATH
+export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-10.0.1/dist/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-10.0.1/dist/lib/mstflint:$LD_LIBRARY_PATH
+export CPATH=$EXP_FRAMEWORK_PATH/llvm/llvm-10.0.1/dist/include/mstflint:$CPATH
+export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-10.0.1/dist/include/mstflint:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/llvm/llvm-10.0.1/dist/include/mstflint:$CPLUS_INCLUDE_PATH
 #DPDK VARS
 export RTE_SDK=$EXP_FRAMEWORK_PATH/dpdk/dpdk-23.07
 export RTE_TARGET=x86_64-native-linuxapp-gcc

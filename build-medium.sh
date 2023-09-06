@@ -2,7 +2,7 @@
 export EXP_FRAMEWORK_PATH=$(pwd)
 export START_DIR=$(pwd)
 cd llvm
-source build_llvm.sh
+source get_llvm.sh
 cd $START_DIR/dpdk
 source build_dpdk.sh
 source $START_DIR/envs/env0.sh
