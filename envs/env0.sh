@@ -21,11 +21,11 @@ export CPATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstf
 export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/ofed-mstflint/mstflint-4.24.0/dist/include/mstflint:$CPLUS_INCLUDE_PATH
 #FASTCLICK VARS
-export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/lib:$LD_LIBRARY_PATH
-export PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/bin:$PATH
-export CPATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/include:$CPATH
-export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/include:$C_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-26a2/dist/include:$CPLUS_INCLUDE_PATH
+export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-514cee/dist/lib:$LD_LIBRARY_PATH
+export PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-514cee/dist/bin:$PATH
+export CPATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-514cee/dist/include:$CPATH
+export C_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-514cee/dist/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=$EXP_FRAMEWORK_PATH/fastclick/fastclick-514cee/dist/include:$CPLUS_INCLUDE_PATH
 #PKTGEN VARS
 export LD_LIBRARY_PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/lib:$LD_LIBRARY_PATH
 export PATH=$EXP_FRAMEWORK_PATH/pktgen/pktgen-23.03/dist/bin:$PATH
