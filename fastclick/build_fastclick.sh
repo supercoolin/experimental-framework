@@ -1,7 +1,7 @@
 dest_dir=dist
 repo=https://github.com/tbarbette/fastclick.git
-repo_version=26a2
-repo_hash=26a2b65
+repo_version=e065a
+repo_hash=e065a73a192d0d4aea02e78e19acceb582479373
 repo_dirname=fastclick-$repo_version
 git clone $repo $repo_dirname
 cd $repo_dirname
